@@ -6,7 +6,7 @@
 	"author": "ZwerOxotnik",
 	"contact": "zweroxotnik@gmail.com, Discord:ZwerOxotnik#7117",
 	"homepage": "",
-	"description": "Every Nth tick, adds N money to each player",
+	"description": "Every Nth tick, adds N money to each player.",
 	"dependencies": [
 		"EasyAPI >= 0.5.5"
 	]
