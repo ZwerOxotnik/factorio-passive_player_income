@@ -26,8 +26,10 @@ local mod_settings = {
 	["PPI_income"] = function(value) income = value end,
 	["PPI_update_tick"] = function(value)
 		script.on_nth_tick(update_tick, nil)
+		M.on_nth_tick[update_tick] = nil
 		update_tick = value
 		if update_tick > 0 then
+			M.on_nth_tick[value] = add_money
 			script.on_nth_tick(value, add_money)
 		end
 	end
