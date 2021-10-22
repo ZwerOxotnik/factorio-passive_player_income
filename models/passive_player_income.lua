@@ -3,7 +3,6 @@ local M = {}
 
 
 --#region Constants
-local match = string.match
 local call = remote.call
 --#endregion
 
@@ -17,8 +16,8 @@ local income = settings.global["PPI_income"].value
 --#region Functions of events
 
 local function add_money()
-	for player_index, money in pairs(call("EasyAPI", "get_players_money")) do
-		call("EasyAPI", "set_player_money_by_index", player_index, money + income)
+	for player_index, money in pairs(call("EasyAPI", "get_online_players_money")) do
+		call("EasyAPI", "set_online_player_money_by_index", player_index, money + income)
 	end
 end
 
@@ -35,9 +34,6 @@ local mod_settings = {
 	end
 }
 local function on_runtime_mod_setting_changed(event)
-	-- if event.setting_type ~= "runtime-global" then return end
-	if not match(event.setting, "^PPI_") then return end
-
 	local f = mod_settings[event.setting]
 	if f then f(settings.global[event.setting].value) end
 end

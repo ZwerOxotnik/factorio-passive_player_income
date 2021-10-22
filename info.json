@@ -1,13 +1,13 @@
 {
 	"name": "passive_player_income",
-	"version": "0.8.2",
+	"version": "0.9.0",
 	"factorio_version": "1.1",
 	"title": "Passive player income (extension for EasyAPI)",
 	"author": "ZwerOxotnik",
 	"contact": "zweroxotnik@gmail.com, Discord:ZwerOxotnik#7117",
-	"homepage": "",
+	"homepage": "https://www.reddit.com/r/ZwerOxotnik/",
 	"description": "Every Nth tick, adds N money to each player.",
 	"dependencies": [
-		"EasyAPI >= 0.5.8"
+		"EasyAPI >= 0.7.0"
 	]
 }
