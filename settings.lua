@@ -6,6 +6,6 @@ data:extend({
 	}, {
 		type = "int-setting", name = "PPI_income",
 		setting_type = "runtime-global", localised_name = {"income"},
-		default_value = 10, minimal_value = 1, maximal_value = 8e4
+		default_value = 10,  minimal_value = 1, maximal_value = 8e4
 	}
 })

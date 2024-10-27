@@ -63,7 +63,7 @@ Every Nth tick, adds N money to each player.
 If you want to download from this source, then use commands below (requires [git][git]).
 
 ```bash
-git clone --recurse-submodules -j8 https://github.com/ZwerOxotnik/factorio-passive_player_income
+git clone --recurse-submodules -j8 https://github.com/ZwerOxotnik/factorio-passive_player_income passive_player_income
 cd passive_player_income
 ```
 
@@ -79,7 +79,7 @@ Alternatively, join the [Discord group][Discord] and send a message there.
 License
 -------
 
-Copyright (c) 2021 ZwerOxotnik <zweroxotnik@gmail.com>
+Copyright (c) 2021, 2024 ZwerOxotnik <zweroxotnik@gmail.com>
 
 Licensed under the MIT licence.
 
